@@ -1,22 +1,22 @@
-# Data Types in C++
+# Data Types in C++ 👩‍💻👨‍💻
 There's a lot of data types in C++ which you should know. But we need to define them correct first. Let's see how we can do that :
 ```c++
 [data type] [name] = [value];
 [data type] [name] {value};
 [data type] [name] (value);
 ```
-But better use first type.
+But better use first type. 🚀
 - - - - 
 ## Primitive Data Types:
-### Int
+### Int 🧮
 The ```int``` data type in C++ is used to store integer values. It can hold both positive and negative whole numbers. The size of the int data type is typically 4 bytes, but it can vary depending on the compiler and the computer architecture.
 
 Here are some key points about the int data type:
 
--  **Range**: The range of values that can be stored in an int depends on the number of bytes allocated for it. For a 4-byte int, the range is approximately -2 billion to 2 billion (-2.147.483.648 to 2.147.483.647).
-- **Default Initialization**: If you declare an int variable without assigning a value, it will be initialized to 0 by default.
-- **Arithmetic Operations**: You can perform various arithmetic operations on int variables, such as addition, subtraction, multiplication, and division.
-- **Overflow**: If the result of an arithmetic operation exceeds the range of the int data type, it will cause an overflow, resulting in undefined behavior.
+- 🎯 **Range**: The range of values that can be stored in an int depends on the number of bytes allocated for it. For a 4-byte int, the range is approximately -2 billion to 2 billion (-2.147.483.648 to 2.147.483.647).
+- 📦 **Default Initialization**: If you declare an int variable without assigning a value, it will be initialized to 0 by default.
+- 🔍 **Arithmetic Operations**: You can perform various arithmetic operations on int variables, such as addition, subtraction, multiplication, and division.
+- 🤒 **Overflow**: If the result of an arithmetic operation exceeds the range of the int data type, it will cause an overflow, resulting in undefined behavior.
   For example, since our positive limit is 2.147.483.647, **we cannot reach more than it.**
   ```c++
   int ourMaximumLimit = 2147483647; //we created an integer with name "ourMaximumLimit" with maximum value
@@ -29,7 +29,7 @@ Here are some key points about the int data type:
   ourMaximumValue = 2147483647
   overMaximum = -2147483648;
   ```
-  Weird, innit?
+  Weird, innit? 🤔
   <br>⚠️The reason overflow happens is **due to the finite representation of numbers in computer memory**. In binary representation, integers are stored using a fixed number of bits. For example, a 4-byte int can store values from -2,147,483,648 to 2,147,483,647. When you perform an arithmetic operation that results in a value outside this range, the representation of the number exceeds the available bits, causing an overflow. </br>
 
 - **Modifiers**: You can use modifiers like short, long, and long long to specify different sizes of the int data type. For example, short int is a 2-byte integer, long int is a 4-byte integer, and long long int is an 8-byte integer.
@@ -38,7 +38,7 @@ int a = 5; // variable "a" has a value 5
 int b{25}; // variable "b" has a value 25
 int c(-19); //variable "c" has a value -19
 ```
-### Float
+### Float 🌊
 The ```float``` data type in C++ is used to store single-precision floating-point numbers. It is used to represent decimal numbers with a smaller range and less precision compared to the ```double``` data type.You should use ```double``` when you need **higher precision and accuracy**, and **memory usage is not a concern**. Use ```float``` when memory efficiency is important, and you **can tolerate slightly lower precision.**
 Here are some key points about the float data type:
 
@@ -48,14 +48,13 @@ Here are some key points about the float data type:
 - **Default** Initialization: If you declare a float variable without assigning a value, it will be initialized to 0.0 by default.
 - **Arithmetic Operations**: You can perform various arithmetic operations on float variables, such as addition, subtraction, multiplication, and division.
 - **Floating-Point Errors**: Due to the limited precision of the float data type, there can be rounding errors and inaccuracies in calculations involving float values. It's important to be aware of these limitations when working with float variables.
-#### Another difference between ```double``` and ```float``` is that you can define double types without decimal point, but you cannot do it with float.
-Additionally, you can write float numbers with ```f``` in the end of numbers, which will show that your number is 100% float.
+<br>🎯 Additionally, you can write float numbers with ```f``` in the end of numbers, which will show that your number is 100% float.</br>
 ```c++
 float q {25.5};
 float w = 15.1f; //the variable is 100% float
 float e = 15; //ERROR, to fix this -> add decimal point and either 0 or any other number
 ```
-### Double
+### Double 🌊🌊
 The double data type in C++ is used to store double-precision floating-point numbers. It provides higher precision and a larger range compared to the float data type.
 
 Here are some key points about the double data type:
@@ -72,7 +71,7 @@ double b {11.2};
 double c = 12;
 ```
 
-### Char
+### Char 🎵
 The ```char``` data type in C++ is used to represent individual characters. It is used to store single characters such as letters, digits, and special symbols.
 
 Here are some key points about the char data type:
@@ -98,7 +97,7 @@ Some of you can say that it's better to write ```std::string``` , and you're rig
 But, exist situations where using ```char[]``` is necessary or more appropriate, such as when working with legacy code, interacting with **C-style APIs**, or dealing with low-level memory operations. In such cases, caution should be exercised to ensure proper memory management and avoid potential vulnerabilities.
 
 
-### Bool
+### Bool ✔️❌
 The ```bool``` data type in C++ is used to represent boolean values, which can have one of two possible states: true or false. Boolean values are commonly used in programming for logical operations, decision-making, and conditional statements.
 
 Here are some key points about the bool data type:
@@ -129,8 +128,9 @@ std::cout << "a = " << a << '\n';
 std::cout << "b = " << b;
 std::cout << noboolalpha; //disabled to print false and true
 ```
-And we will have false and true instead of numbers:
+🎉 And we will have false and true instead of numbers, yay:
 ```c++
 a = true
 b = false
 ```
+
