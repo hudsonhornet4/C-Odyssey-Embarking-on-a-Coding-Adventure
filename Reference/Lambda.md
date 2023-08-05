@@ -40,7 +40,7 @@ int main() {
 By default, a lambda's ```operator()``` is considered **const**, which means it can't modify captured variables.
 - **Enabling Modification of Captured Variables**: The primary purpose of mutable is to give you the flexibility to modify the values of the captured variables within the lambda's body, even if they were initially captured by value.
 - **How to Use mutable**: The mutable keyword is placed before the parameter list (if any) and the return type (if specified) of the lambda expression. You can use it with both explicit and implicit lambda captures.
-```
+```c++
 void simpleBlock(){ //scope start
   double a = 55.4;
   double c = -11.1;
