@@ -128,7 +128,7 @@ We also can give a name to our lambda functions. For example :
 ```c++
 int main(){ //scope start
 
-auto lambda [](auto a, auto b){ // we didn't capture any, just created a function in our 'main'
+auto lambda = [](auto a, auto b){ // we didn't capture any, just created a function in our 'main'
       //but now 'lambda' function supposed to have 2 parameters
       return a - b; //created function to calculate a and b
 
@@ -139,7 +139,7 @@ either ```double``` or ```int``` , because if we used ```bool```.. how would you
 ```c++
 int main(){ //scope start
 
-auto lambda [](auto a, auto b){ 
+auto lambda = [](auto a, auto b){ 
       return a - b;
 };
 double firstNum = 25.0;
